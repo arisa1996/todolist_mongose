@@ -6,6 +6,7 @@ const { errorHandle, successHandle } = require('./handler');
 const { getTodo, postTodo, deleteTodo, patchTodo } = require('./logic');
 const Todo = require('./models/todos');
 
+
 dotenv.config({ path: './config.env' });
 const DB = process.env.DATABASE.replace(
   '<password>',
